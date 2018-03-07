@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">UBUDiabetes 1.1</string>
+    <string name="action_settings">Ajustes de perfil</string>
+    <string name="action_acerca">Acerca de...</string>
+    <string name="action_idioma">Idioma</string>
+
+    <string-array name="opciones">
+        <item>Registro de glucemias</item>
+        <item>Historial de glucemias</item>
+    </string-array>
+
+    <!--- Strings de Perfil -->
+    <string name="tvnombre">Nombre</string>
+    <string name="tvperfil">Perfil del usuario</string>
+    <string name="tvedad">Edad</string>
+    <string name="h_nombre">Introduce aquí tu nombre</string>
+    <string name="h_edad">Introduce aquí tu edad</string>
+    <string name="tvestatura">Estatura (cm)</string>
+    <string name="tvpeso">Peso (kg)</string>
+    <string name="hestatura">Introduce tu estatura en cm</string>
+    <string name="hpeso">Introduce tu peso en kg</string>
+    <string name="tvmaxmin">Introduce los valores de glucemia deseados entre 80 y 250 mg/dl</string>
+    <string name="h_min">mín.(mg/dl)</string>
+    <string name="h_max">máx.(mg/dl)</string>
+    <string name="tvinsulina">Insulina del bolo</string>
+    <string name="cb_rapida">Rápida</string>
+    <string name="cb_ultrarrapida">Ultrarrápida</string>
+    <string name="tv_insulina_basal">Basal</string>
+    <string name="tv_insulina_rapida">Rápida</string>
+    <string name="tv_uds">Unidades de insulina</string>
+    <string name="bt_guardar">Guardar</string>
+    <string name="minmax_incorrecto">Introduce valores min y max de glucemia entre los valores indicados</string>
+    <string name="minmax_orden">El valor min de glucemia no puedes ser mayor que el valor máximo</string>
+
+    <string name="primeraEjecucion">primeraEjecucion</string>
+    <string name="nombre">nombre</string>
+    <string name="edad">edad</string>
+    <string name="estatura">estatura</string>
+    <string name="peso">peso</string>
+    <string name="min">min</string>
+    <string name="max">max</string>
+    <string name="udsBasal">udsBasal"</string>
+    <string name="udsRapida">udsRapida</string>
+    <string name="rapida">rapida</string>
+    <string name="ultrarrapida">ultrarrapida</string>
+    <string name="glucemia">glucemia</string>
+
+    <!--- Strings de Menu principal -->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
+    <string name="acerca_de">UBUDiabetes 1.1. Aplicación de control de la diabetes en dispositivos móviles. Realizada la versión 1.0 por Mario López Jimenez (febrero 2016). \n\nModificada por Raúl Marticorena Sánchez, en su versión 1.1.1.0 (marzo 2017).\n\nUniversidad de Burgos. 2017.</string>
+    <string name="bt_bolo">Calcular bolo</string>
+    <string name="main_registro">Registro de glucemias</string>
+    <string name="main_historial">Historial de glucemias</string>
+
+    <!--- Strings de Registro de glucemia -->
+    <string name="title_activity_registro_glucemias">RegistroGlucemias</string>
+    <string name="tv_glucemia">Introduce el valor de glucemia</string>
+    <string name="h_vglucemia">Introduzca el valor de glucemia</string>
+
+    <!--- Strings de Incidencias -->
+    <string name="title_activity_incidencias">Incidencias</string>
+    <string name="tv_incidencia">Selecciona la causa de la incidencia</string>
+    <string name="tv_observaciones">Anote aquí sus observaciones</string>
+    <string name="incidencia_correcta">Incidencia registrada correctamente</string>
+
+    <!--- Strings de Historial -->
+    <string name="title_activity_historial">Historial</string>
+    <string name="leyenda_desayuno">Antes de desayunar</string>
+    <string name="leyenda_comida">Después de comer</string>
+    <string name="leyenda_cena">Antes de cenar</string>
+    <string name="leyenda_chart">Valores glucemia última semana</string>
+    <string name="sinIncidencia">El valor de glucemia se encuentra dentro de los márgenes aceptables. No hay incidencias.</string>
+    <string name="hist_incidencia">Incidencia:</string>
+    <string name="hist_observacion">Observaciones:</string>
+    <string name="hist_sinobservaciones">No se registraron observaciones para esta incidencia.</string>
+
+    <!--- Strings de Carbohidratos -->
+    <string name="consejo_intensidad_alta">Además para su actividad física, tome suplementos (10 a 20gr de hidratos de carbono), preferentemente líquidos cada 30-45 minutos.</string>
+    <string name="consejo_intensidad_media">Además debe tomar un suplemento de 15 a 20 gr de hidratos de carbono, y realizar un control a la mitad y al final del ejercicio.</string>
+    <string name="consejo_intensidad_irregular">Además no debe administrarse más insulina hasta concluir con la actividad física.</string>
+    <string name="bt_mascomida">Añadir otro</string>
+    <string name="resultado_bolo">Las unidades de insulina necesarias del bolo corrector son: </string>
+    <string name="ingerir_carbohidratos">Nivel de glucemia demasiado bajo. Necesita ingerir carbohidratos.</string>
+    <string name="bolo">Bolo corrector</string>
+    <string name="title_activity_carbohidratos">Carbohidratos</string>
+    <string name="tv_carbohidratos">Selecciona el alimento de la ingesta</string>
+    <string name="tv_valorgramos">Introduce el número de gramos del alimento</string>
+    <string name="bt_finalizar">Finalizar</string>
+    <string name="aceptar">Aceptar</string>
+
+</resources>
