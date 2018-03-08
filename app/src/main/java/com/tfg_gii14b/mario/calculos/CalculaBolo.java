@@ -74,8 +74,13 @@ public class CalculaBolo { // extends AppCompatActivity {
      */
 
     public double calculaUdsGlucemia(){
-
-        return (valores.getGlucemia() - calculaGlucemiaObjetivo()) / calculaFactorSensibilidad();
+        double operando=(valores.getGlucemia() - calculaGlucemiaObjetivo()) / calculaFactorSensibilidad();
+        // Bug versión 1.1, "El resultado para el cálculo de insulina si la glucosa en sangre es menor de
+        // la glucemia objetivo, es negativo. DEBERIA SER CERO.
+        if (operando < 0) { // si es negativo el operando
+            operando = 0; // se toma valor cero
+        }
+        return operando;
     }
 
     /**
@@ -84,11 +89,7 @@ public class CalculaBolo { // extends AppCompatActivity {
     public double calculoBoloCorrector() {
         double operando1 = gramosHidratosCarbono / calculaRatio();
         double operando2 = calculaUdsGlucemia();
-        // Bug versión 1.1, "El resultado para el cálculo de insulina si la glucosa en sangre es menor de
-        // la glucemia objetivo, es negativo. DEBERIA SER CERO.
-        if (operando2 < 0) { // si es negativo el operando es negativo
-            operando2 = 0; // se toma valor cero
-        }
-        return operando1 + operando2;
+
+        return (operando1 + operando2);
     }
 }
