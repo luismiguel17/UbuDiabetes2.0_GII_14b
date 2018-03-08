@@ -45,23 +45,37 @@ public class CalculaBolo { // extends AppCompatActivity {
     }
 
     /**
+     * CAMBIO: DE PRIVATE A PUBLIC
      * Realiza el calculo del factor de sensibilidad.
      *
      * @return FSI factor de sensibilidad
      */
-    private double calculaFactorSensibilidad() {
+    public double calculaFactorSensibilidad() {
         double suma = valores.getInsulinaBasal() + valores.getInsulinaRapida();
-        double constante = valores.isRapida() ? 1500 : 1800;
+        //Nuevo Cambio- Hasta contrastar con casos de pruebas reales
+        double constante = valores.isRapida() ? 1800 : 1500;
+        //double constante = valores.isRapida() ? 1500 : 1800;
         return constante / suma;
     }
 
     /**
+     * CAMBIO: DE PRIVATE A PUBLIC
      * Calcula la glucemia objetivo como la media de la glucemia máxima y la mínima.
      *
      * @return glucemia objetivo
      */
-    private double calculaGlucemiaObjetivo() {
+    public double calculaGlucemiaObjetivo() {
         return (valores.getGlucemiaMaxima() + valores.getGlucemiaMinima()) / 2;
+    }
+
+    /**
+     * calculaUdsGlucemia. cálculo de Unidades de Insulina según glucemia
+     * @return
+     */
+
+    public double calculaUdsGlucemia(){
+
+        return (valores.getGlucemia() - calculaGlucemiaObjetivo()) / calculaFactorSensibilidad();
     }
 
     /**
@@ -69,7 +83,7 @@ public class CalculaBolo { // extends AppCompatActivity {
      */
     public double calculoBoloCorrector() {
         double operando1 = gramosHidratosCarbono / calculaRatio();
-        double operando2 = (valores.getGlucemia() - calculaGlucemiaObjetivo()) / calculaFactorSensibilidad();
+        double operando2 = calculaUdsGlucemia();
         // Bug versión 1.1, "El resultado para el cálculo de insulina si la glucosa en sangre es menor de
         // la glucemia objetivo, es negativo. DEBERIA SER CERO.
         if (operando2 < 0) { // si es negativo el operando es negativo
