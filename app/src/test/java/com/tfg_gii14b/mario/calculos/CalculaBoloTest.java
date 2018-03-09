@@ -72,7 +72,7 @@ public class CalculaBoloTest {
         insTotal = insulinaBasal+ insulinaRapida;
         calculadorBolo = new CalculaBolo(valoresP,200);
         //System.out.println("FSI:" + (float)calculadorBolo.calculaFactorSensibilidad());
-        assertEquals((float)(1800/insTotal),(float)calculadorBolo.calculaFactorSensibilidad(),2);
+        assertEquals((float)(1500/insTotal),(float)calculadorBolo.calculaFactorSensibilidad(),2);
     }
 
     /**
@@ -92,7 +92,7 @@ public class CalculaBoloTest {
         insTotal = insulinaBasal+ insulinaRapida;
         calculadorBolo = new CalculaBolo(valoresP,200);
         //System.out.println("FSI:" + (float)calculadorBolo.calculaFactorSensibilidad());
-        assertEquals((float)(1500/insTotal),(float)calculadorBolo.calculaFactorSensibilidad(),2);
+        assertEquals((float)(1800/insTotal),(float)calculadorBolo.calculaFactorSensibilidad(),2);
     }
 
     /**
@@ -158,7 +158,7 @@ public class CalculaBoloTest {
         insTotal = insulinaBasal + insulinaRapida;
         calculadorBolo = new CalculaBolo(valoresP,grHC);
         //Calculos segun formulas acuales
-        double fsi = 1800/insTotal;
+        double fsi = 1500/insTotal;
         double ratio = 500/insTotal;
         double gluObjetivo = (glucemiaMinima+glucemiaMaxima)/2;
         double uiGlucemia = (int)((glucemia-gluObjetivo)/fsi);

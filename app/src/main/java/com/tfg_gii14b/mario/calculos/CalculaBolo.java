@@ -52,9 +52,8 @@ public class CalculaBolo { // extends AppCompatActivity {
      */
     public double calculaFactorSensibilidad() {
         double suma = valores.getInsulinaBasal() + valores.getInsulinaRapida();
-        //Nuevo Cambio- Hasta contrastar con casos de pruebas reales
-        double constante = valores.isRapida() ? 1800 : 1500;
-        //double constante = valores.isRapida() ? 1500 : 1800;
+
+        double constante = valores.isRapida() ? 1500 : 1800;
         return constante / suma;
     }
 
