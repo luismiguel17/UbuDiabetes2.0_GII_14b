@@ -42,16 +42,16 @@ public class Perfil extends AppCompatActivity {
     public final void cargarPreferencias() {
         SharedPreferences misPreferencias = getSharedPreferences("PreferenciasUsuario", MODE_PRIVATE);
 
-        EditText nombreEt = (EditText) findViewById(R.id.et_nombre);
-        EditText edadEt = (EditText) findViewById(R.id.et_edad);
-        EditText estaturaEt = (EditText) findViewById(R.id.et_estatura);
-        EditText pesoEt = (EditText) findViewById(R.id.et_peso);
-        EditText maxEt = (EditText) findViewById(R.id.et_max);
-        EditText minEt = (EditText) findViewById(R.id.et_min);
+        EditText nombreEt = (EditText) findViewById(R.id.et_id_nombre);
+        EditText edadEt = (EditText) findViewById(R.id.et_id_edad);
+        EditText estaturaEt = (EditText) findViewById(R.id.et_id_estatura);
+        EditText pesoEt = (EditText) findViewById(R.id.et_id_peso);
+        EditText maxEt = (EditText) findViewById(R.id.et_id_ly1_1_profile_max);
+        EditText minEt = (EditText) findViewById(R.id.et_id_ly1_1_profile_min);
         EditText uds1Et = (EditText) findViewById(R.id.et_udsBasal);
         EditText uds2Et = (EditText) findViewById(R.id.et_udsRapida);
-        RadioButton rapidaCheck = (RadioButton) findViewById(R.id.rb_rapida);
-        RadioButton ultrarrapidaCheck = (RadioButton) findViewById(R.id.rb_ultrarrapida);
+        RadioButton rapidaCheck = (RadioButton) findViewById(R.id.rb_id_rapida);
+        RadioButton ultrarrapidaCheck = (RadioButton) findViewById(R.id.rb_id_ultrarrapida);
 
         nombreEt.setText(misPreferencias.getString(getString(R.string.nombre), ""));
         edadEt.setText(misPreferencias.getString(getString(R.string.edad), ""));
@@ -78,16 +78,16 @@ public class Perfil extends AppCompatActivity {
         SharedPreferences misPreferencias = getSharedPreferences("PreferenciasUsuario", MODE_PRIVATE);
         SharedPreferences.Editor editorPreferencias = misPreferencias.edit();
 
-        EditText nombreEt = (EditText) findViewById(R.id.et_nombre);
-        EditText edadEt = (EditText) findViewById(R.id.et_edad);
-        EditText estaturaEt = (EditText) findViewById(R.id.et_estatura);
-        EditText pesoEt = (EditText) findViewById(R.id.et_peso);
-        EditText maxEt = (EditText) findViewById(R.id.et_max);
-        EditText minEt = (EditText) findViewById(R.id.et_min);
+        EditText nombreEt = (EditText) findViewById(R.id.et_id_nombre);
+        EditText edadEt = (EditText) findViewById(R.id.et_id_edad);
+        EditText estaturaEt = (EditText) findViewById(R.id.et_id_estatura);
+        EditText pesoEt = (EditText) findViewById(R.id.et_id_peso);
+        EditText maxEt = (EditText) findViewById(R.id.et_id_ly1_1_profile_max);
+        EditText minEt = (EditText) findViewById(R.id.et_id_ly1_1_profile_min);
         EditText udsBasalEt = (EditText) findViewById(R.id.et_udsBasal);
         EditText udsRapidaEt = (EditText) findViewById(R.id.et_udsRapida);
-        RadioButton rapidaCheck = (RadioButton) findViewById(R.id.rb_rapida);
-        RadioButton ultrarrapidaCheck = (RadioButton) findViewById(R.id.rb_ultrarrapida);
+        RadioButton rapidaCheck = (RadioButton) findViewById(R.id.rb_id_rapida);
+        RadioButton ultrarrapidaCheck = (RadioButton) findViewById(R.id.rb_id_ultrarrapida);
 
         String nombre = nombreEt.getText().toString();
         String edad = edadEt.getText().toString();

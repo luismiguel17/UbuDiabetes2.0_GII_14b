@@ -10,27 +10,26 @@
     </string-array>
 
     <!--- Strings de Perfil -->
-    <string name="tvnombre">Nombre</string>
-    <string name="tvperfil">Perfil del usuario</string>
-    <string name="tvedad">Edad</string>
-    <string name="h_nombre">Introduce aquí tu nombre</string>
-    <string name="h_edad">Introduce aquí tu edad</string>
-    <string name="tvestatura">Estatura (cm)</string>
-    <string name="tvpeso">Peso (kg)</string>
-    <string name="hestatura">Introduce tu estatura en cm</string>
-    <string name="hpeso">Introduce tu peso en kg</string>
-    <string name="tvmaxmin">Introduce los valores de glucemia deseados entre 80 y 250 mg/dl</string>
+
+    <string name="tv_txt_perfil">Perfil de Usuario</string>
+    <string name="h_nombre_de_usuario">Introduce tu nombre</string>
+    <string name="h_edad">Introduce tu edad</string>
+    <string name="h_basal">Uds I.Basal</string>
+    <string name="h_rapida">Uds I.Rápida</string>
+    <string name="h_estatura">Introduce tu estatura(cm)</string>
+    <string name="h_peso">Introduce tu peso(kg)</string>
+    <string name="tv_txt_ly1.1_profile_maxmin">Introduce los valores de glucemia deseados entre 80 y 250 mg/dl</string>
     <string name="h_min">mín.(mg/dl)</string>
     <string name="h_max">máx.(mg/dl)</string>
-    <string name="tvinsulina">Insulina del bolo</string>
-    <string name="cb_rapida">Rápida</string>
-    <string name="cb_ultrarrapida">Ultrarrápida</string>
-    <string name="tv_insulina_basal">Basal</string>
-    <string name="tv_insulina_rapida">Rápida</string>
-    <string name="tv_uds">Unidades de insulina</string>
+    <string name="tv_txt_insulina">Insulina del bolo</string>
+    <string name="rb_txt_Rápida">Rápida</string>
+    <string name="rb_txt_UltraRápida">Ultrarrápida</string>
+    <string name="tv_txt_uds">Unidades de insulina</string>
     <string name="bt_guardar">Guardar</string>
     <string name="minmax_incorrecto">Introduce valores min y max de glucemia entre los valores indicados</string>
     <string name="minmax_orden">El valor min de glucemia no puedes ser mayor que el valor máximo</string>
+
+
 
     <string name="primeraEjecucion">primeraEjecucion</string>
     <string name="nombre">nombre</string>
