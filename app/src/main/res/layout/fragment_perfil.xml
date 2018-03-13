@@ -1,174 +1,213 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="fill_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/ly1_profile"
+        android:id="@+id/ly1_id_profile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="18dp"
-        android:paddingRight="18dp"
-        android:background="@drawable/login_gradient">
-
-        <TextView
-            android:id="@+id/tv_id_userprofile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tv_txt_perfil"
-            android:textAlignment="center"
-            android:layout_gravity="center"
-            android:textColor="#FFF"
-            android:textStyle="bold"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/et_id_nombre"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/et_profilestyle"
-            android:hint="@string/h_nombre_de_usuario"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/et_id_edad"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:inputType="number"
-            android:background="@drawable/et_profilestyle"
-            android:hint="@string/h_edad" />
-
-        <EditText
-            android:id="@+id/et_id_estatura"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:inputType="number"
-            android:background="@drawable/et_profilestyle"
-            android:hint="@string/h_estatura" />
-
-        <EditText
-            android:id="@+id/et_id_peso"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:inputType="number"
-            android:background="@drawable/et_profilestyle"
-            android:hint="@string/h_peso" />
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
 
         <LinearLayout
             android:id="@+id/ly1.1_id_profile"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_height="0dp"
             android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#871414"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_id_ly1.1_profile_maxmin"
+                android:id="@+id/tv_id_userprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="@string/tv_txt_perfil"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_id_nombre"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_profilestyle"
+                android:hint="@string/h_nombre_de_usuario"
+                android:inputType="textPersonName"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <EditText
+                android:id="@+id/et_id_edad"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_profilestyle"
+                android:hint="@string/h_edad"
+                android:inputType="number"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <EditText
+                android:id="@+id/et_id_estatura"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_profilestyle"
+                android:hint="@string/h_estatura"
+                android:inputType="number"
+                android:textColor="#fff"
+                android:textColorHint="#fff" />
+
+            <EditText
+                android:id="@+id/et_id_peso"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/et_profilestyle"
+                android:hint="@string/h_peso"
+                android:inputType="number"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ly1.2_id_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:background="#871414">
+
+            <TextView
+                android:id="@+id/tv_id_ly1.2_profile_maxmin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tv_txt_ly1.1_profile_maxmin"
                 android:textAlignment="center"
-                android:textColor="#FFF" />
+                android:textColor="#FFF"
+                android:textStyle="bold" />
 
             <LinearLayout
-                android:id="@+id/ly1.1.1_id_profile"
+                android:id="@+id/ly1.2.1_id_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="#871414"
+                android:layout_marginBottom="10dp">
 
                 <EditText
-                    android:id="@+id/et_id_ly1.1_profile_min"
+                    android:id="@+id/et_id_ly2.1_profile_min"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/et_profilestyle"
                     android:hint="@string/h_min"
-                    android:inputType="number" />
+                    android:textColorHint="#fff"
+                    android:inputType="number"
+                    android:textColor="#fff"/>
 
                 <EditText
-                    android:id="@+id/et_id_ly1.1_profile_max"
+                    android:id="@+id/et_id_ly2.1_profile_max"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:background="@drawable/et_profilestyle"
                     android:hint="@string/h_max"
+                    android:textColorHint="#fff"
                     android:inputType="number"
-                    android:layout_marginStart="50dp" />
+                    android:textColor="#fff"/>
 
             </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/ly1.2_id_profile"
+            android:id="@+id/ly1.3_id_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#871414">
 
             <TextView
-                android:id="@+id/tv_id_ly1.2_profile_insulina"
+                android:id="@+id/tv_id_ly1.3_profile_insulina"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:text="@string/tv_txt_insulina"
                 android:textAlignment="center"
                 android:textColor="#FFF"
-                android:text="@string/tv_txt_insulina"/>
+                android:textStyle="bold" />
 
             <RadioGroup
                 android:id="@+id/rg_id_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp">
 
                 <RadioButton
                     android:id="@+id/rb_id_rapida"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checked="false"
                     android:text="@string/rb_txt_Rápida"
-                    android:checked="false" />
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
 
                 <RadioButton
                     android:id="@+id/rb_id_ultrarrapida"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checked="false"
                     android:text="@string/rb_txt_UltraRápida"
-                    android:checked="false" />
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
             </RadioGroup>
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/ly1.3_id_profile"
+            android:id="@+id/ly1.4_id_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#871414">
 
             <TextView
-                android:id="@+id/tv_id_ly1.3_profile_uds_insulina"
+                android:id="@+id/tv_id_ly1.4_profile_uds_insulina"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/tv_txt_uds"
-                android:textColor="#FFF" />
+                android:textColor="#FFF"
+                android:textStyle="bold" />
 
             <LinearLayout
-                android:id="@+id/ly1.3.1_id_profile"
+                android:id="@+id/ly1.4.1_id_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="#871414"
+                android:layout_marginBottom="10dp">
 
                 <EditText
                     android:id="@+id/et_udsBasal"
@@ -176,30 +215,36 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/et_profilestyle"
                     android:hint="@string/h_basal"
-                    android:inputType="number" />
+                    android:textColorHint="#fff"
+                    android:inputType="number"
+                    android:textColor="#fff"/>
 
                 <EditText
                     android:id="@+id/et_udsRapida"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:background="@drawable/et_profilestyle"
                     android:hint="@string/h_rapida"
+                    android:textColorHint="#fff"
                     android:inputType="number"
-                    android:layout_marginLeft="50dp" android:layout_marginStart="50dp"/>
+                    android:textColor="#fff"/>
             </LinearLayout>
 
         </LinearLayout>
 
-    <Button
-        android:id="@+id/bt_guardar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/bt_guardar"
-        android:enabled="true"
-        android:focusable="false"
-        android:background="@drawable/btn_save_profile"
-        android:onClick="guardarperfilOnClick"
-        android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/bt_guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_save_profile"
+            android:enabled="true"
+            android:focusable="false"
+            android:onClick="guardarperfilOnClick"
+            android:text="@string/bt_guardar"
+            android:textColor="#fff"/>
     </LinearLayout>
 </ScrollView>

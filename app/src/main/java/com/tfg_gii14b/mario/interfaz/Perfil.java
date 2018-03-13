@@ -46,8 +46,8 @@ public class Perfil extends AppCompatActivity {
         EditText edadEt = (EditText) findViewById(R.id.et_id_edad);
         EditText estaturaEt = (EditText) findViewById(R.id.et_id_estatura);
         EditText pesoEt = (EditText) findViewById(R.id.et_id_peso);
-        EditText maxEt = (EditText) findViewById(R.id.et_id_ly1_1_profile_max);
-        EditText minEt = (EditText) findViewById(R.id.et_id_ly1_1_profile_min);
+        EditText maxEt = (EditText) findViewById(R.id.et_id_ly2_1_profile_max);
+        EditText minEt = (EditText) findViewById(R.id.et_id_ly2_1_profile_min);
         EditText uds1Et = (EditText) findViewById(R.id.et_udsBasal);
         EditText uds2Et = (EditText) findViewById(R.id.et_udsRapida);
         RadioButton rapidaCheck = (RadioButton) findViewById(R.id.rb_id_rapida);
@@ -82,8 +82,8 @@ public class Perfil extends AppCompatActivity {
         EditText edadEt = (EditText) findViewById(R.id.et_id_edad);
         EditText estaturaEt = (EditText) findViewById(R.id.et_id_estatura);
         EditText pesoEt = (EditText) findViewById(R.id.et_id_peso);
-        EditText maxEt = (EditText) findViewById(R.id.et_id_ly1_1_profile_max);
-        EditText minEt = (EditText) findViewById(R.id.et_id_ly1_1_profile_min);
+        EditText maxEt = (EditText) findViewById(R.id.et_id_ly2_1_profile_max);
+        EditText minEt = (EditText) findViewById(R.id.et_id_ly2_1_profile_min);
         EditText udsBasalEt = (EditText) findViewById(R.id.et_udsBasal);
         EditText udsRapidaEt = (EditText) findViewById(R.id.et_udsRapida);
         RadioButton rapidaCheck = (RadioButton) findViewById(R.id.rb_id_rapida);
